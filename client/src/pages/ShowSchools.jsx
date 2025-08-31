@@ -6,7 +6,7 @@ export default function ShowSchools() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/schools")
+      .get("https://schoolassignment.onrender.com/schools")
       .then((res) => {
         setSchools(res.data);
       })

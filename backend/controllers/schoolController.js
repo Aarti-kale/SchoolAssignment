@@ -29,7 +29,7 @@ exports.getSchools = (req, res) => {
     const schools = results.map((school) => ({
       ...school,
       image: school.image
-        ? `http://localhost:5000/uploads/schoolImages/${school.image}` // full path
+        ? `https://schoolassignment.onrender.com/uploads/schoolImages/${school.image}` // full path
         : null,
     }));
 

@@ -10,5 +10,9 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use("/schools", schoolRoutes);
 
+app.get("/", (req, res) => {
+    res.send("Api working");
+  });
+  
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

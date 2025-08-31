@@ -5,7 +5,7 @@ function SchoolCard({ school }) {
     <div className="col-md-4 col-sm-6 mb-4">
       <div className="card h-100 shadow-sm">
         <img
-          src={`http://localhost:5000/schoolImages/${school.image}`}
+          src={`https://schoolassignment.onrender.com/schoolImages/${school.image}`}
           className="card-img-top"
           alt={school.name}
         />

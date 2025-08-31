@@ -33,7 +33,7 @@ export default function AddSchoolForm() {
       data.append("address", formData.address);
       data.append("image", formData.image[0]);
 
-      const res = await axios.post("http://localhost:5000/schools/add", data, {
+      const res = await axios.post("https://schoolassignment.onrender.com/schools/add", data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
